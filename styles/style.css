@@ -111,7 +111,7 @@
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #f72874;
+  --color-accent-primary: #000000;
   --color-accent-secondary: #f72874;
   --color-overlay-primary: rgba(8, 3, 19, 0.5);
   --color-highlight: #f72874;
@@ -130,11 +130,11 @@
   --h6-color: #2d2323;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
-  --color-text-project-category: #ffffff;
+  --color-text-project-category: #ff057c;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
   --color-text-project-title: #5200ff;
-  --color-text-work-grid-title: #ffffff;
+  --color-text-work-grid-title: #ff057c;
   /* Link States */
   --color-link: #ff057c;
   --color-link-hover: #111;
@@ -532,6 +532,7 @@ sup {
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
+  text-align: left;
 }
 
 /* Large project title — appears on individual project pages */
@@ -868,7 +869,6 @@ a.nav-link-primary:hover {
 
 /* Project container for background and padding */
 .project-container {
-  background: var(--color-accent-primary); /* Set project background color */
   padding: var(--padding-medium);
 }
 
@@ -1407,7 +1407,7 @@ to keep your styles reusable and consistent.
   }
 
   h1 {
-    font-size: 4.275rem;
+    font-size: 2.2rem;
   }
 
   h2 {
