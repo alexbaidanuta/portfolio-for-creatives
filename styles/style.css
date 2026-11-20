@@ -116,7 +116,7 @@
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg-footer: #fffffff;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #2d2323;
@@ -285,7 +285,8 @@ svg {
 }
 
 .width-third,
-.width-two-thirds {
+.width-two-thirds,
+.one-third {
   width: 100%;
 }
 
@@ -458,7 +459,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -772,7 +773,9 @@ a.nav-link-primary:hover {
   ); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
-
+.full-width-section-content {
+  align-items: center;
+}
 .full-width-headline-wrapper {
   width: 100%;
   min-height: 60vh; /* Ensures the headline takes up a good portion of the screen */
@@ -987,7 +990,7 @@ a.nav-link-primary:hover {
 .footer-global {
   display: grid;
   grid-template-columns: 1fr; /* Single column layout */
-  grid-gap: 3rem; /* Consistent spacing between sections */
+  grid-gap: 0; /* Consistent spacing between sections */
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
@@ -1393,6 +1396,9 @@ to keep your styles reusable and consistent.
     flex-direction: row; /* Changes to row layout on larger screens */
   }
 
+  .one-third {
+    width: 33.333%;
+  }
   .width-third {
     width: 33.333%;
   }
@@ -1408,7 +1414,8 @@ to keep your styles reusable and consistent.
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
+    font-weight: 100;
   }
 
   h3 {
