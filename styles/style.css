@@ -422,11 +422,6 @@ svg {
   height: 100%;
 }
 
-/* ---------------------------------------- */
-/* 🧭 Responsive Navigation (Coming Soon)   */
-/* This section is in progress — you'll build a mobile-friendly nav bar here */
-/* ---------------------------------------- */
-
 .responsive-nav {
   display: flex;
   flex-direction: row;
@@ -1411,11 +1406,12 @@ to keep your styles reusable and consistent.
 
   h1 {
     font-size: 2.2rem;
+    font-weight: 350;
   }
 
   h2 {
     font-size: 1.5rem;
-    font-weight: 100;
+    font-weight: 0;
   }
 
   h3 {
